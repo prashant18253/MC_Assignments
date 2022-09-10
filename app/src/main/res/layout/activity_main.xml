@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of steps taken"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="direction"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/stride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stride length"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/scanWifi"
+            android:text="Scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/wardrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wardrive"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/locate"
+            android:text="locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KNN"
+            android:id="@+id/knn"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMU"
+            android:id="@+id/imu"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wifiList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+
+</LinearLayout>
